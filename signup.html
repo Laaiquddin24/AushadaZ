@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup - Health Care Methods</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="form-container">
+      <h1>Signup</h1>
+      <form id="signup-form" autocomplete="off">
+        <label>Name:<br><input type="text" id="signup-name" required></label>
+        <label>Email:<br><input type="email" id="signup-email" required></label>
+        <label>Password:<br><input type="password" id="signup-password" required></label>
+        <button type="submit">Signup</button>
+      </form>
+      <div class="form-switch">
+        Already have an account?
+        <a href="login.html">Login</a>
+      </div>
+      <div id="signup-message" style="margin-top:1em;color:#d32f2f;"></div>
+    </div>
+  </div>
+  <script>
+    document.getElementById('signup-form').onsubmit = function(e) {
+      e.preventDefault();
+      const name = document.getElementById('signup-name').value.trim();
+      const email = document.getElementById('signup-email').value.trim().toLowerCase();
+      const password = document.getElementById('signup-password').value;
+
+      if (!name || !email || !password) {
+        document.getElementById('signup-message').textContent = "All fields are required.";
+        return;
+      }
+
+      let users = JSON.parse(localStorage.getItem('users') || '{}');
+      if (users[email]) {
+        document.getElementById('signup-message').textContent = "Email already registered. Please login.";
+        return;
+      }
+
+      users[email] = { name, password };
+      localStorage.setItem('users', JSON.stringify(users));
+      localStorage.setItem('authenticated', 'true');
+      localStorage.setItem('currentUser', email);
+      document.getElementById('signup-message').style.color = "#388e3c";
+      document.getElementById('signup-message').textContent = "Signup successful! Redirecting...";
+      setTimeout(() => {
+        window.location.href = "index.html";
+      }, 1200);
+    };
+  </script>
+</body>
+</html>

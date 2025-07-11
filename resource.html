@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resource - Health Care Methods</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .resource-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2em;
+      margin-top: 2em;
+    }
+    .resource-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      padding: 1.5em;
+      text-align: center;
+      transition: box-shadow 0.2s;
+    }
+    .resource-card:hover {
+      box-shadow: 0 4px 16px rgba(211,47,47,0.15);
+    }
+    .resource-img {
+      width: 100%;
+      max-width: 220px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1em;
+    }
+    .resource-title {
+      color: #d32f2f;
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+    .resource-desc {
+      font-size: 1em;
+      color: #333;
+      margin-bottom: 0.7em;
+    }
+    .resource-link {
+      color: #fff;
+      background: #d32f2f;
+      padding: 0.5em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s;
+      display: inline-block;
+    }
+    .resource-link:hover {
+      background: #b71c1c;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="event.html">Event</a></li>
+      <li><a href="resource.html" class="active">Resource</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Signup</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>Herbal Medicine Resources</h1>
+    <p>Explore detailed information about popular herbal medicines, their uses, and where to purchase them online.</p>
+    <div class="rating">Rating: ★★★★☆</div>
+
+    <div class="resource-list">
+      <div class="resource-card">
+        <img class="resource-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqa5VOZwXqBqWTwzZYKFmnb9ex0MzXXL6rHQ&s" alt="Ashwagandha">
+        <div class="resource-title">Ashwagandha (Withania somnifera)</div>
+        <div class="resource-desc">
+          Known as Indian ginseng, Ashwagandha is used to reduce stress, boost energy, and improve concentration. It is a key herb in Ayurveda for overall vitality.
+        </div>
+        <a class="resource-link" href="https://www.1mg.com/otc/himalaya-ashvagandha-tablet-otc326725" target="_blank">Buy Ashwagandha</a>
+      </div>
+      <div class="resource-card">
+        <img class="resource-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeM2z1NzyOvUhIX9aTv7MFxaG0u064sfwdfg&s" alt="Turmeric">
+        <div class="resource-title">Turmeric (Curcuma longa)</div>
+        <div class="resource-desc">
+          Turmeric contains curcumin, a powerful anti-inflammatory and antioxidant. Used for joint health, immunity, and digestive wellness.
+        </div>
+        <a class="resource-link" href="https://www.amazon.in/s?k=turmeric+supplement" target="_blank">Buy Turmeric</a>
+      </div>
+      <div class="resource-card">
+        <img class="resource-img" src="https://media.post.rvohealth.io/wp-content/uploads/2020/09/1296x728_Holy_Basil-1200x628.jpg" alt="Tulsi">
+        <div class="resource-title">Tulsi (Holy Basil)</div>
+        <div class="resource-desc">
+          Tulsi is revered for its adaptogenic, anti-stress, and immune-boosting properties. Commonly used in teas and herbal remedies.
+        </div>
+        <a class="resource-link" href="https://www.organicindia.com/products/tulsi-tea" target="_blank">Buy Tulsi</a>
+      </div>
+      <div class="resource-card">
+        <img class="resource-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFJ2B2MPvEsWAuNEgErRdVj8WCR8kMEIgw5Q&s" alt="Neem">
+        <div class="resource-title">Neem (Azadirachta indica)</div>
+        <div class="resource-desc">
+          Neem is known for its antibacterial, antifungal, and blood-purifying effects. Used for skin care, oral health, and detoxification.
+        </div>
+        <a class="resource-link" href="https://www.patanjaliayurved.net/product/neem-tablet/116" target="_blank">Buy Neem</a>
+      </div>
+      <div class="resource-card">
+        <img class="resource-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOI08C3g9mKqB9Fz7d-NyfQub8mzAlnzHofQ&s" alt="Ginger">
+        <div class="resource-title">Ginger (Zingiber officinale)</div>
+        <div class="resource-desc">
+          Ginger is widely used for its anti-nausea, digestive, and anti-inflammatory benefits. It is a staple in both traditional and modern medicine.
+        </div>
+        <a class="resource-link" href="https://www.amazon.in/s?k=ginger+supplement" target="_blank">Buy Ginger</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery - Health Care Methods</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .marquee-container {
+      overflow: hidden;
+      width: 100%;
+      margin-top: 2em;
+      position: relative;
+      background: #fafafa;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee 30s linear infinite;
+      gap: 2em;
+      align-items: stretch;
+    }
+    .gallery-item {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      overflow: hidden;
+      text-align: center;
+      padding: 1em;
+      min-width: 320px;
+      max-width: 340px;
+      margin: 1em 0;
+      transition: transform 0.2s;
+      flex-shrink: 0;
+    }
+    .gallery-item:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 16px rgba(211,47,47,0.15);
+    }
+    .gallery-img {
+      width: 100%;
+      max-width: 320px;
+      border-radius: 8px;
+      margin-bottom: 1em;
+      object-fit: cover;
+      height: 180px;
+    }
+    .gallery-caption {
+      font-size: 1em;
+      color: #333;
+      margin-top: 0.5em;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    @media (max-width: 600px) {
+      .gallery-img {
+        height: 120px;
+      }
+      .gallery-item {
+        min-width: 220px;
+        max-width: 240px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="event.html">Event</a></li>
+      <li><a href="resource.html">Resource</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Signup</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>Gallery</h1>
+    <p>Explore our collection of ancient operation methods and herbal medicines through informative images.</p>
+    <div class="rating">Rating: ★★★★☆</div>
+
+    <div class="marquee-container">
+      <div class="marquee-track" id="marquee-track">
+        <!-- Repeat images twice for seamless loop -->
+        <div class="gallery-item">
+          <img class="gallery-img" src="https://hekint.org/images/All_journal_images/2015_Briefs/Physicians-of-Note/RobertThom.jpg" alt="Sushruta Samhita Surgery Illustration">
+          <div class="gallery-caption">Ancient Indian surgery as described in Sushruta Samhita</div>
+        </div>
+        <div class="gallery-item">
+          <img class="gallery-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1KXpgUs0jb5xv9HMqSRK8tFSYlQMkGqV0DQ&s" alt="Ancient Surgical Tools">
+          <div class="gallery-caption">Ancient surgical tools used for operations</div>
+        </div>
+        <div class="gallery-item">
+          <img class="gallery-img" src="https://m.media-amazon.com/images/I/81IyD+g-0oL._UF1000,1000_QL80_.jpg" alt="Traditional Chinese Medicine">
+          <div class="gallery-caption">Traditional Chinese Medicine: Acupuncture and Cupping</div>
+        </div>
+        <div class="gallery-item">
+          <img class="gallery-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkt_2PRM9ElHRqpR9OJFel0qVZ1hyhuG8V1w&s" alt="Egyptian Medicine">
+          <div class="gallery-caption">Ancient Egyptian healing and surgical practices</div>
+        </div>
+        <div class="gallery-item">
+          <img class="gallery-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0E0gA0cM7Uy2dR7GP1dVNt_4PIvR0-77Y2g&s" alt="Herbal Medicines">
+          <div class="gallery-caption">Herbal medicines used in Ayurveda and traditional healing</div>
+        </div>
+        <div class="gallery-item">
+          <img class="gallery-img" src="https://www.verywellhealth.com/thmb/w9B2xBUuCC0OxAox7k-qukUet38=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/VWH_Illustration_10-Healing-Herbs-With-Medicinal-Benefits_Illustrator_Mira-Norian_Title_Final-47ce13013375448c9e8e7e8c21fb50f7.jpg" alt="Herbal Remedies">
+          <div class="gallery-caption">Herbal remedies and natural healing plants</div>
+        </div>
+        <div class="gallery-item">
+          <img class="gallery-img" src="https://www.shutterstock.com/image-photo/turmeric-plant-slice-ginger-cut-260nw-2561119993.jpg" alt="Medicinal Herbs">
+          <div class="gallery-caption">Medicinal herbs: turmeric, ginger, tulsi, and more</div>
+        </div>
+        <div class="gallery-item">
+          <img class="gallery-img" src="https://publinestorage.blob.core.windows.net/3a4949e9-3629-478f-99ac-7a9376c68950/fim-23-86-g001.jpg" alt="Herbal Preparation">
+          <div class="gallery-caption">Preparation of herbal medicines in traditional practice</div>
+        </div>
+        <!-- Repeat for seamless marquee -->
+        <div class="gallery-item">
+          <img class="gallery-img" src="https://trueindologytwitter.wordpress.com/wp-content/uploads/2020/03/ti44-copy.jpg?w=899" alt="Sushruta Samhita Surgery Illustration">
+          <div class="gallery-caption">Ancient Indian surgery as described in Sushruta Samhita</div>
+        </div>
+        <div class="gallery-item">
+          <img class="gallery-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRlFwPXEm2EIEHGjGAuUts1vziQXb5oKR5fA&s" alt="Ancient Surgical Tools">
+          <div class="gallery-caption">Ancient surgical tools used for operations</div>
+        </div>
+        <div class="gallery-item">
+          <img class="gallery-img" src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Traditional Chinese Medicine">
+          <div class="gallery-caption">Traditional Chinese Medicine: Acupuncture and Cupping</div>
+        </div>
+        <div class="gallery-item">
+          <img class="gallery-img" src="https://images.unsplash.com/photo-1519494080410-f9aa8f52f1e1?auto=format&fit=crop&w=600&q=80" alt="Egyptian Medicine">
+          <div class="gallery-caption">Ancient Egyptian healing and surgical practices</div>
+        </div>
+        <div class="gallery-item">
+          <img class="gallery-img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Herbal Medicines">
+          <div class="gallery-caption">Herbal medicines used in Ayurveda and traditional healing</div>
+        </div>
+        <div class="gallery-item">
+          <img class="gallery-img" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Herbal Remedies">
+          <div class="gallery-caption">Herbal remedies and natural healing plants</div>
+        </div>
+        <div class="gallery-item">
+          <img class="gallery-img" src="https://images.unsplash.com/photo-1509228468518-c5eeecbff44a?auto=format&fit=crop&w=600&q=80" alt="Medicinal Herbs">
+          <div class="gallery-caption">Medicinal herbs: turmeric, ginger, tulsi, and more</div>
+        </div>
+        <div class="gallery-item">
+          <img class="gallery-img" src="https://publinestorage.blob.core.windows.net/3a4949e9-3629-478f-99ac-7a9376c68950/fim-23-86-g003.jpg" alt="Herbal Preparation">
+          <div class="gallery-caption">Preparation of herbal medicines in traditional practice</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

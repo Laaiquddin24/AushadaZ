@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Health Care Methods - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .modal {
+      display: flex;
+      position: fixed;
+      z-index: 1000;
+      left: 0; top: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-content {
+      background: #fff;
+      padding: 2em 3em;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .modal-content button {
+      margin: 1em 1em 0 1em;
+      padding: 0.5em 2em;
+      background: #d32f2f;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background 0.3s;
+    }
+    .modal-content button:hover {
+      background: #b71c1c;
+    }
+    #main-content.blurred {
+      filter: blur(3px);
+      pointer-events: none;
+      user-select: none;
+    }
+    .section {
+      margin: 2em 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 2em;
+    }
+    .section img {
+      max-width: 320px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .section-content {
+      flex: 1;
+      min-width: 250px;
+    }
+    .section-title {
+      color: #d32f2f;
+      margin-bottom: 0.5em;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .center-list {
+      list-style: disc inside;
+      margin: 1em 0 0 0;
+      padding: 0;
+    }
+    .center-list li {
+      margin-bottom: 0.5em;
+    }
+    @media (max-width: 800px) {
+      .section {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .section img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="event.html">Event</a></li>
+      <li><a href="resource.html">Resource</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Signup</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <div id="main-content" class="container blurred">
+    <h1>Welcome to Health Care Methods</h1>
+    <p>Your trusted source for modern and traditional healthcare solutions.</p>
+
+    <div class="section">
+      <img src="https://theunitednationscorrespondent.com/wp-content/uploads/2022/03/2863241.jpg" alt="Traditional Medicines">
+      <div class="section-content">
+        <div class="section-title">Traditional Medicines & Their Usages</div>
+        <p>
+          Traditional medicine systems such as Ayurveda, Traditional Chinese Medicine (TCM), and Homeopathy have been practiced for centuries. These systems focus on holistic healing, using natural herbs, minerals, and therapies to treat various ailments.
+        </p>
+        <ul class="center-list">
+          <li>
+            <b>Ayurveda:</b> Uses herbal remedies, yoga, and dietary guidelines to balance body energies. Common herbs include <i>ashwagandha</i>, <i>turmeric</i>, and <i>tulsi</i>.
+          </li>
+          <li>
+            <b>Traditional Chinese Medicine:</b> Focuses on acupuncture, herbal medicine, and tai chi. Popular herbs include <i>ginseng</i>, <i>gingko biloba</i>, and <i>goji berries</i>.
+          </li>
+          <li>
+            <b>Homeopathy:</b> Utilizes highly diluted substances to stimulate the body’s healing process.
+          </li>
+        </ul>
+        <p>
+          <a href="resource.html" style="color:#d32f2f;text-decoration:underline;">Learn more about traditional remedies &rarr;</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <img src="https://i.insider.com/622a58576ec7c20019cd8d07?width=700" alt="Healthcare Centers">
+      <div class="section-content">
+        <div class="section-title">Healthcare Centers & Their Treatments</div>
+        <p>
+          Modern healthcare centers combine advanced medical technology with patient-centered care. Frhttps://i.insider.com/622a58576ec7c20019cd8d07?width=700om preventive screenings to specialized treatments, these centers offer a wide range of services:
+        </p>
+        <ul class="center-list">
+          <li>
+            <b>Primary Care:</b> Routine check-ups, immunizations, and health education.
+          </li>
+          <li>
+            <b>Specialty Clinics:</b> Cardiology, oncology, orthopedics, and more.
+          </li>
+          <li>
+            <b>Integrative Medicine:</b> Many centers now offer yoga, meditation, and nutrition counseling alongside conventional treatments.
+          </li>
+        </ul>
+        <p>
+          <a href="about.html" style="color:#d32f2f;text-decoration:underline;">Discover our partner healthcare centers &rarr;</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd-JPexOQN0iHNs1tyKc08_Zcx3wVuknUIvQ&s" alt="Wellness Programs">
+      <div class="section-content">
+        <div class="section-title">Wellness & Preventive Programs</div>
+        <p>
+          Prevention is better than cure. Our wellness programs focus on lifestyle management, stress reduction, and early detection of diseases. Join our workshops and webinars to stay updated on the latest in health and wellness.
+        </p>
+        <ul class="center-list">
+          <li>Yoga and meditation sessions</li>
+          <li>Nutrition and diet counseling</li>
+          <li>Community health events</li>
+        </ul>
+        <p>
+          <a href="event.html" style="color:#d32f2f;text-decoration:underline;">See upcoming events &rarr;</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="auth-modal">
+    <div class="modal-content">
+      <h2>Welcome!</h2>
+      <p>Please <b>Signup</b> or <b>Login</b> to experience the website.</p>
+      <button id="login-btn">Login</button>
+      <button id="signup-btn">Signup</button>
+    </div>
+  </div>
+  <script>
+    // Simulate authentication with localStorage
+    function checkAuth() {
+      return localStorage.getItem('authenticated') === 'true';
+    }
+
+    function showMainContent() {
+      document.getElementById('auth-modal').style.display = 'none';
+      document.getElementById('main-content').classList.remove('blurred');
+    }
+
+    function showAuthModal() {
+      document.getElementById('auth-modal').style.display = 'flex';
+      document.getElementById('main-content').classList.add('blurred');
+    }
+
+    // Show modal after 1 minute of activity if not authenticated
+    let modalTimer;
+    function startModalTimer() {
+      if (!checkAuth()) {
+        modalTimer = setTimeout(function() {
+          showAuthModal();
+        }, 60000); // 1 minute = 60000 ms
+      }
+    }
+
+    function resetModalTimer() {
+      if (!checkAuth()) {
+        clearTimeout(modalTimer);
+        startModalTimer();
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      if (checkAuth()) {
+        showMainContent();
+      } else {
+        showMainContent(); // Show content first
+        startModalTimer();
+        // Reset timer on user activity
+        ['mousemove', 'keydown', 'scroll', 'click'].forEach(function(evt) {
+          window.addEventListener(evt, resetModalTimer);
+        });
+      }
+
+      document.getElementById('login-btn').onclick = function() {
+        window.location.href = "login.html";
+      };
+      document.getElementById('signup-btn').onclick = function() {
+        window.location.href = "signup.html";
+      };
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Health Care Methods</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="form-container">
+      <h1>Login</h1>
+      <form id="login-form" autocomplete="off">
+        <label>Email:<br><input type="email" id="login-email" required></label>
+        <label>Password:<br><input type="password" id="login-password" required></label>
+        <button type="submit">Login</button>
+      </form>
+      <div class="form-switch">
+        Don't have an account?
+        <a href="signup.html">Register</a>
+      </div>
+      <div id="login-message" style="margin-top:1em;color:#d32f2f;"></div>
+    </div>
+  </div>
+  <script>
+    document.getElementById('login-form').onsubmit = function(e) {
+      e.preventDefault();
+      const email = document.getElementById('login-email').value.trim().toLowerCase();
+      const password = document.getElementById('login-password').value;
+      let users = JSON.parse(localStorage.getItem('users') || '{}');
+      if (users[email] && users[email].password === password) {
+        localStorage.setItem('authenticated', 'true');
+        localStorage.setItem('currentUser', email);
+        document.getElementById('login-message').style.color = "#388e3c";
+        document.getElementById('login-message').textContent = "Login successful! Redirecting...";
+        setTimeout(() => {
+          window.location.href = "index.html";
+        }, 1200);
+      } else {
+        document.getElementById('login-message').textContent = "Invalid email or password.";
+      }
+    };
+  </script>
+</body>
+</html>
